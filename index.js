@@ -6,7 +6,7 @@ function takeANumber(katzDeli, name){
   while (katzDeli[i] != name){
     i++
   }
-  
+
   var string = `Welcome, ${name}. You are number ${i+1} in line.`
   return string
 }
@@ -24,7 +24,7 @@ function currentLine(katzDeli){
   var string = "The line is currently: "
   var space
   for (var i=0; katzDeli.length > i; i++){
-    
+
     string += `${i+1}. `+katzDeli[i]+`${katzDeli.length === i+1 ? space = "" : space = ", "}`
   }
   return string
@@ -32,5 +32,5 @@ function currentLine(katzDeli){
   else{
     return 'The line is currently empty.'
   }
-  
+
 }
